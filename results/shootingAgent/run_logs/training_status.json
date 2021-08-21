@@ -1,42 +1,40 @@
 {
+    "shoot": {
+        "checkpoints": [
+            {
+                "steps": 33177,
+                "file_path": "results/shootingAgent/shoot/shoot-33177.onnx",
+                "reward": null,
+                "creation_time": 1629577253.819886
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 33177,
+            "file_path": "results/shootingAgent/shoot.onnx",
+            "reward": null,
+            "creation_time": 1629577253.819886
+        }
+    },
+    "My Behavior": {
+        "checkpoints": [
+            {
+                "steps": 149117,
+                "file_path": "results/shootingAgent/My Behavior/My Behavior-149117.onnx",
+                "reward": 0.0,
+                "creation_time": 1629577253.888
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 149117,
+            "file_path": "results/shootingAgent/My Behavior.onnx",
+            "reward": 0.0,
+            "creation_time": 1629577253.888
+        }
+    },
     "metadata": {
         "stats_format_version": "0.2.0",
         "mlagents_version": "0.23.0",
         "torch_version": "1.7.1",
         "tensorflow_version": -1
-    },
-    "My Behavior": {
-        "checkpoints": [
-            {
-                "steps": 0,
-                "file_path": "results/shootingAgent/My Behavior/My Behavior-0.onnx",
-                "reward": null,
-                "creation_time": 1629575323.9566028
-            },
-            {
-                "steps": 42362,
-                "file_path": "results/shootingAgent/My Behavior/My Behavior-42362.onnx",
-                "reward": 0.0,
-                "creation_time": 1629575598.143033
-            },
-            {
-                "steps": 48971,
-                "file_path": "results/shootingAgent/My Behavior/My Behavior-48971.onnx",
-                "reward": 0.0,
-                "creation_time": 1629575656.08063
-            },
-            {
-                "steps": 57078,
-                "file_path": "results/shootingAgent/My Behavior/My Behavior-57078.onnx",
-                "reward": 0.0,
-                "creation_time": 1629575754.9320178
-            }
-        ],
-        "final_checkpoint": {
-            "steps": 57078,
-            "file_path": "results/shootingAgent/My Behavior.onnx",
-            "reward": 0.0,
-            "creation_time": 1629575754.9320178
-        }
     }
 }
