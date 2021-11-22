@@ -1,0 +1,24 @@
+{
+    "snake": {
+        "checkpoints": [
+            {
+                "steps": 343907,
+                "file_path": "results/ppo/snake/snake-343907.onnx",
+                "reward": 0.04065040650406504,
+                "creation_time": 1637532925.216492
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 343907,
+            "file_path": "results/ppo/snake.onnx",
+            "reward": 0.04065040650406504,
+            "creation_time": 1637532925.216492
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.2.0",
+        "mlagents_version": "0.23.0",
+        "torch_version": "1.7.1",
+        "tensorflow_version": -1
+    }
+}

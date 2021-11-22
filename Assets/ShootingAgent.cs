@@ -40,9 +40,13 @@ public class ShootingAgent : Agent
 //AI collects observations on everything you ai needs to make a useful decision
     public override void CollectObservations(VectorSensor sensor){
         sensor.AddObservation(transform.localPosition);
-        AddReward(-0.001f);
-        // sensor.AddObservation(enemyAgent.localPosition);
+        //sensor.AddObservation(transform.localRotation);
+        // foreach(GameObject enemy in enemies){
+        //     sensor.AddObservation(enemy.transform.localPosition);
+        // }
         // base.CollectObservations(sensor);
+        AddReward(-0.001f);
+        
     }
 
 //Everything AI done is turned into concrete action
@@ -156,15 +160,16 @@ public class ShootingAgent : Agent
         }
     }
 
+
     private void OnTriggerEnter(Collider other){
-    	Debug.Log(other.gameObject.tag);
+
     	// if(other.gameObject.tag == "wall"){
 			
      //        AddReward(-0.1f); //sets single reward for a collision
 	    // 	// EndEpisode();
     	// }
     	if(other.gameObject.tag == "enemy"){
-            Debug.Log("Player died");
+            Debug.Log(" Player died");
             losses += 1;
             lossesText.text = "Losses: "+losses;
 
@@ -173,4 +178,19 @@ public class ShootingAgent : Agent
     	}
 
     }
+
+    // void OnCollisionEnter(Collision collision)
+    // {
+    //                 Debug.Log(collision.collider.tag+ "Collision");
+
+    //     if(collision.gameObject.CompareTag("enemy")){
+    //         Debug.Log(collision.collider.tag+ " Player died");
+    //         losses += 1;
+    //         lossesText.text = "Losses: "+losses;
+
+    //         AddReward(-1.0f); //sets single reward for a collision
+    //         EndEpisode();
+    //     }
+
+    // }
 }

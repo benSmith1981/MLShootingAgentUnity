@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/BasicLearning/Examples/Soccer/Scenes/SoccerTwos.unity
+- path: Assets/EnemyAgent/AiShooting.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0

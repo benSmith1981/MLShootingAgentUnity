@@ -41,9 +41,9 @@ public class Enemy : MonoBehaviour
         Debug.Log("Enemy died");
         isDead = true;
         shooter.numberDead += 1;
+        shooter.RegisterKill();
 
         gameObject.SetActive(false);
-    	shooter.RegisterKill();
     }
 
     public void Respawn() {
